@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	
+    <title>app</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="./dist/build.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wvVj3zn0U7H2iZwDEHuuPRlMOPGk3ZLO"></script>
+    <script>
+		
+		window.onload = function () {
+			// document.documentElement:根标签
+			// document.documentElement.clientWidth:屏幕宽度
+
+			// 屏幕尺寸/设计稿的宽度 *100px  保证在设计稿中 1rem=100px
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 1349 * 100  + 'px';
+
+			window.onresize = function  () {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 1349 * 100 + 'px';
+			}
+		}
+
+
+	</script>
+  </body>
+</html>
